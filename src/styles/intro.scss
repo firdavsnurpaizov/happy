@@ -1,0 +1,59 @@
+.intro {
+  padding: 93px 0 100px 0;
+
+  &-wrapper {
+    padding: 45px 100px 45px 78px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &-description {
+    &__logo {
+      margin-bottom: 11px;
+    }
+    &__heading {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 54px;
+      line-height: 60px;
+      margin-bottom: 17px;
+      width: 400px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      width: 394px;
+    }
+    &__btn {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 148px;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #222222;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    &__btn:hover {
+      background: #4e4e4e;
+    }
+    &__btn:active {
+        transform: scale(0.98);
+    }
+    &__btn:focus {
+        outline: solid #5AB0FF;
+    }
+  }
+}

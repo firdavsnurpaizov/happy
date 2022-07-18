@@ -1,0 +1,40 @@
+@import './header.scss';
+@import './timer.scss';
+@import './intro.scss';
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+}
+.container-mini {
+  max-width: 1168px;
+  margin: 0 auto;
+}
