@@ -1,10 +1,19 @@
 .intro {
-  padding: 93px 0 100px 0;
+  padding: 93px 0 109px 0;
 
   &-wrapper {
     padding: 45px 100px 45px 78px;
     display: flex;
     justify-content: space-between;
+  }
+  &-image__wrapper {
+    position: relative;
+    img {
+        position: absolute;
+        top: -47px;
+        right: 1px;
+        z-index: -1;
+    }
   }
 
   &-buttons {
@@ -14,7 +23,7 @@
 
   &-description {
     &__logo {
-      margin-bottom: 11px;
+      margin-bottom: 5px;
     }
     &__heading {
       font-family: "Poppins";

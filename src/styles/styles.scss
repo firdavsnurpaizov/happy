@@ -1,6 +1,12 @@
 @import './header.scss';
 @import './timer.scss';
 @import './intro.scss';
+@import './features.scss';
+@import './statistics.scss';
+@import './mode.scss';
+@import './price.scss';
+@import './footer.scss';
+@import './modal.scss';
 
 @font-face {
   font-family: "Poppins";
@@ -28,6 +34,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #222222;
+  padding-top: 90px;
 }
 
 .container {

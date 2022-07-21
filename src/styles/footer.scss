@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  padding: 100px 0 100px 0;
+
+  &-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 26px;
+  }
+  a:hover {
+    fill: #5ab0ff;
+    cursor: pointer;
+  }
+  a {
+    margin-top: -8px;
+  }
+}

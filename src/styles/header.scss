@@ -1,12 +1,21 @@
 .header {
+  background-color: #fff;
   padding: 23px 20px 21px 32px;
+  z-index: 10;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
+  &-navbar {
+    display: flex;
+  }
   &-navbar__menu {
     display: flex;
     align-items: center;
@@ -56,4 +65,13 @@
   &-btn:focus {
       outline: solid #5AB0FF;
   }
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+
+      &-menu {
+        display: none;
+      }
+    }
 }
