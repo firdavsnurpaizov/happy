@@ -10,10 +10,7 @@
   }
 
   &-heading {
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: 700;
-    // font-size: 50px;
     font-size: clamp(36px, 4vw, 50px);
     line-height: 75px;
     line-height: clamp(40px, 4vw, 75px);
@@ -21,34 +18,28 @@
     letter-spacing: 1.1px;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-top: 68px;
   }
 
   &-text {
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: 700;
-    // font-size: 30px;
     font-size: clamp(18px, 3vw, 30px);
-    // font-size: 30px;
     line-height: 45px;
     text-align: center;
     letter-spacing: 1.5px;
     color: #ffffff;
-    margin-bottom: 8px;
+    margin-bottom: 22px;
   }
   &-items {
     display: flex;
     justify-content: space-between;
     max-width: 729px;
-    gap: 40px;
+    // gap: 32px;
+    gap: 21px;
     p {
-      font-family: "Poppins";
-      font-style: normal;
       font-weight: 400;
-      // font-size: 100px;
       font-size: clamp(50px, 8vw, 100px);
-      // line-height: 134px;
       line-height: clamp(60px, 8vw, 134px);
 
       display: flex;
@@ -60,42 +51,33 @@
     }
   }
   &-item {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    // font-size: 100px;
     font-size: clamp(40px, 8vw, 100px);
-    // line-height: 134px;
     line-height: clamp(60px, 8vw, 134px);
     display: flex;
     align-items: center;
     letter-spacing: 1.1px;
     text-transform: uppercase;
-    // width: 22px;
-
     color: #ffffff;
+    // max-width: 24px;
 
     &__body {
       display: flex;
       align-items: start;
       justify-content: center;
-      gap: 16px;
+      // gap: 16px;
+      gap: 65px;
     }
     &__wrapper {
       display: flex;
       flex-direction: column;
-      // gap: 115px;
+      // align-items: center;
     }
 
     &__description {
-      font-family: "Poppins";
-      font-style: normal;
       font-weight: 700;
-      // font-size: 24px;
       font-size: clamp(12px, 4vw, 24px);
       line-height: 36px;
       letter-spacing: 1.5px;
-
       color: #ffffff;
     }
   }
@@ -107,7 +89,7 @@
 
 @media screen and (max-width: 992px) {
   .timer {
-    height: 320px;
+    height: 350px;
     padding: 0 16px;
     &-items {
       gap: 30px;
@@ -126,14 +108,10 @@
   }
 }
 
-
 @media screen and (max-width: 375px) {
   .timer {
     &-items {
       gap: 5px;
-    }
-    &-item__body {
-      // gap: 5px;
     }
   }
 }

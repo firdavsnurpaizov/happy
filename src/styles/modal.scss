@@ -8,7 +8,8 @@
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-
+  overflow-y: auto;
+  
   &-body {
     height: 100%;
     display: flex;
@@ -16,6 +17,7 @@
     justify-content: center;
   }
   &-content {
+    // margin: 50px;
     padding: 38px 90px 56px 86px;
     background: #ffffff;
     border-radius: 4px;
@@ -38,7 +40,7 @@
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    width: 312px;
+    max-width: 312px;
     color: #000000;
     margin-bottom: 42px;
   }
@@ -75,7 +77,7 @@
       background: #f2f2f2;
       border-radius: 4px;
       border: none;
-      width: 330px;
+      max-width: 330px;
       height: 42px;
       padding: 9px 0 9px 17px;
       outline-color: #5ab0ff;
@@ -95,9 +97,9 @@
   }
 
   &-subtitle {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
+    // font-family: "Poppins";
+    // font-style: normal;
+    // font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -175,7 +177,7 @@
     justify-content: center;
     background: #fafafa;
 
-    width: 330px;
+    max-width: 330px;
     height: 42px;
     position: relative;
 
