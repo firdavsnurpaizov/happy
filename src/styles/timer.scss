@@ -14,8 +14,9 @@
     font-style: normal;
     font-weight: 700;
     // font-size: 50px;
-    font-size: clamp(24px, 4vw, 50px);
+    font-size: clamp(36px, 4vw, 50px);
     line-height: 75px;
+    line-height: clamp(40px, 4vw, 75px);
     text-align: center;
     letter-spacing: 1.1px;
     text-transform: uppercase;
@@ -29,38 +30,69 @@
     font-weight: 700;
     // font-size: 30px;
     font-size: clamp(18px, 3vw, 30px);
-    font-size: 30px;
+    // font-size: 30px;
     line-height: 45px;
     text-align: center;
     letter-spacing: 1.5px;
     color: #ffffff;
+    margin-bottom: 8px;
   }
   &-items {
     display: flex;
     justify-content: space-between;
-    width: 729px;
+    max-width: 729px;
+    gap: 40px;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      // font-size: 100px;
+      font-size: clamp(50px, 8vw, 100px);
+      // line-height: 134px;
+      line-height: clamp(60px, 8vw, 134px);
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
   }
   &-item {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     // font-size: 100px;
-    font-size: clamp(40px, 6vw, 100px);
-    line-height: 150px;
+    font-size: clamp(40px, 8vw, 100px);
+    // line-height: 134px;
+    line-height: clamp(60px, 8vw, 134px);
     display: flex;
     align-items: center;
     letter-spacing: 1.1px;
     text-transform: uppercase;
-    width: 22px;
-
+    // width: 22px;
 
     color: #ffffff;
+
+    &__body {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 16px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      // gap: 115px;
+    }
 
     &__description {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: clamp(12px, 4vw, 24px);
       line-height: 36px;
       letter-spacing: 1.5px;
 
@@ -71,7 +103,37 @@
   .none {
     display: none;
   }
-//   #s {
-//     border: 1px solid #FFF;
-//   }
+}
+
+@media screen and (max-width: 992px) {
+  .timer {
+    height: 320px;
+    padding: 0 16px;
+    &-items {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timer {
+    &-items {
+      gap: 16px;
+    }
+    &-item__body {
+      gap: 5px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .timer {
+    &-items {
+      gap: 5px;
+    }
+    &-item__body {
+      // gap: 5px;
+    }
+  }
 }

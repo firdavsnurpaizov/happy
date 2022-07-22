@@ -1,5 +1,5 @@
 .price {
-  padding: 98px 0 121px 0;
+  padding: 98px 16px 121px 16px;
 
   &-description {
     display: flex;
@@ -37,11 +37,13 @@
     line-height: 24px;
     text-align: center;
     color: #666666;
-    width: 568px;
+    max-width: 568px;
     margin-bottom: 40px;
   }
   &-items {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
   }
   &-item {
@@ -51,7 +53,7 @@
     justify-content: center;
     background: #f2f2f2;
     border-radius: 20px;
-    width: 379px;
+    width: 90%;
     padding: 49px 0 50px 0;
 
     &__title {
@@ -66,7 +68,8 @@
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
-      font-size: 108px;
+      // font-size: 108px;
+      font-size: clamp(54px, 8vw, 108px);
       line-height: 99px;
       text-align: center;
       letter-spacing: 8px;
@@ -113,10 +116,10 @@
     background: #4e4e4e;
   }
   &-btn:active {
-      transform: scale(0.98);
+    transform: scale(0.98);
   }
   &-btn:focus {
-      outline: solid #5AB0FF;
+    outline: solid #5ab0ff;
   }
 
   .standart {
@@ -136,5 +139,18 @@
   }
   .lifetime-btn {
     background: #ff9209;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .price {
+    padding: 60px 16px;
+    &-items {
+      flex-direction: column;
+    }
+    &-item {
+      padding: 20px 0;
+      max-width: 379px;
+    }
   }
 }

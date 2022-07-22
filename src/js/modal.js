@@ -18,7 +18,6 @@ modalBtn.forEach(item => item.addEventListener('click', (e) => {
 }))
 
 
-
 modalClose.addEventListener("click", close)
 
 function close() {
@@ -40,7 +39,7 @@ function close() {
 
 document.querySelector(".modal-body").onsubmit = (e) => {
     e.preventDefault()
-    
+
 
     if (formModalName.value == '') {
         formModalName.classList.add('error')
@@ -58,14 +57,26 @@ document.querySelector(".modal-body").onsubmit = (e) => {
         errorEmail.classList.remove('warning')
     }
 
+    if (formModalName.value !== '' && formModalEmail.value !== '') {
+        console.log(false);
+        document.querySelector(".modal-loading").style.opacity = 1
+        setTimeout(() => {
+            modal.style.opacity = 0;
+            modal.style.visibility = 'hidden';
+            document.body.style.overflowY = "auto"
+            document.querySelector(".modal-body").reset()
+            document.querySelector(".modal-loading").style.opacity = 0
 
-    setTimeout(() => {
-        modal.style.opacity = 0;
-        modal.style.visibility = 'hidden';
-        document.body.style.overflowY = "auto"
-        document.querySelector(".modal-body").reset()
-        close()
-    }, 2000);
+            close()
+        }, 2000);
+    } else {
+        console.log('error');
+        console.log(true);
+
+    }
+
+
+
 }
 
 

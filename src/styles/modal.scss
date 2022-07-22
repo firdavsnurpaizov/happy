@@ -70,7 +70,7 @@
     flex-direction: column;
     gap: 17px;
     margin-bottom: 17px;
-    
+
     input {
       background: #f2f2f2;
       border-radius: 4px;
@@ -88,9 +88,9 @@
       background: #ffeeee;
     }
     span.warning {
-        display: block;
-    //   opacity: 1;
-    //   visibility: visible;
+      display: block;
+      //   opacity: 1;
+      //   visibility: visible;
     }
   }
 
@@ -283,4 +283,28 @@
   &-btn__submit:focus {
     outline: solid #5ab0ff;
   }
+
+  &-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+    gap: 13px;
+    opacity: 0;
+
+
+    svg {
+      animation: rotate 2s linear infinite;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
+
+
