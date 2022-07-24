@@ -60,6 +60,7 @@ document.querySelector(".modal-body").onsubmit = (e) => {
     if (formModalName.value !== '' && formModalEmail.value !== '') {
         console.log(false);
         document.querySelector(".modal-loading").style.opacity = 1
+        document.querySelector(".modal-loading").style.visibility = "visible"
         setTimeout(() => {
             modal.style.opacity = 0;
             modal.style.visibility = 'hidden';
