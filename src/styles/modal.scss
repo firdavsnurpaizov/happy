@@ -11,13 +11,13 @@
   overflow-y: auto;
   
   &-body {
+    margin: 50px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   &-content {
-    // margin: 50px;
     padding: 38px 90px 56px 86px;
     background: #ffffff;
     border-radius: 4px;
@@ -34,9 +34,9 @@
     cursor: pointer;
   }
   &-title {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
+    // font-family: "Poppins";
+    // font-style: normal;
+    // font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -45,27 +45,18 @@
     margin-bottom: 42px;
   }
   &-form__namewarning {
-    // font-family: "Poppins";
-    // font-style: normal;
-    // font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: #ff5437;
-    // margin-bottom: 17px;
     padding-left: 11px;
     display: none;
-    // opacity: 0;
-    // visibility: hidden;
   }
   &-form__emailwarning {
     font-size: 12px;
     line-height: 18px;
     color: #ff5437;
-    // margin-bottom: 17px;
     padding-left: 11px;
     display: none;
-    // opacity: 0;
-    // visibility: hidden;
   }
   &-input__wrapper {
     display: flex;
@@ -77,7 +68,7 @@
       background: #f2f2f2;
       border-radius: 4px;
       border: none;
-      max-width: 330px;
+      width: 330px;
       height: 42px;
       padding: 9px 0 9px 17px;
       outline-color: #5ab0ff;
@@ -91,15 +82,10 @@
     }
     span.warning {
       display: block;
-      //   opacity: 1;
-      //   visibility: visible;
     }
   }
 
   &-subtitle {
-    // font-family: "Poppins";
-    // font-style: normal;
-    // font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -177,7 +163,7 @@
     justify-content: center;
     background: #fafafa;
 
-    max-width: 330px;
+    width: 330px;
     height: 42px;
     position: relative;
 
@@ -307,6 +293,50 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+
+      &-body {
+        margin: 19px;
+      }
+      &-content {
+        padding: 0;
+      }
+      &-close {
+        top: 7px;
+        right: 7px;
+      }
+      &-title {
+        max-width: 262px;
+        margin-bottom: 22px;
+        margin-top: 32px;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      &-input__wrapper{
+        gap: 7px;
+
+        input {
+          width: 220px;
+        }
+      }
+      &-subtitle {
+        width: 185px;
+        line-height: 16px;
+      }
+      &-item__wrapper {
+        width: 220px;
+      }
+      &-checkbox__wrapper {
+        gap: 7px;
+        margin-bottom: 25px;
+      }
+      &-label {
+        gap: 6px;
+      }
+    }
 }
 
 
