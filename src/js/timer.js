@@ -1,4 +1,4 @@
-let date = new Date('Jul 25 2022 00:00');
+let date = new Date('Jul 26 2022 00:00');
 
 function counts() {
     let now = new Date();

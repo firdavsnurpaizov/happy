@@ -9,13 +9,13 @@
   opacity: 0;
   visibility: hidden;
   overflow-y: auto;
-  
+
+
   &-body {
-    margin: 50px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 50px; 
   }
   &-content {
     padding: 38px 90px 56px 86px;
@@ -281,7 +281,6 @@
     opacity: 0;
     visibility: hidden;
 
-
     svg {
       animation: rotate 2s linear infinite;
     }
@@ -297,50 +296,48 @@
 }
 
 @media screen and (max-width: 768px) {
-    .modal {
+  .modal {
+    &-body {
+      margin: 19px;
+    }
+    &-content {
+      padding: 0;
+    }
+    &-close {
+      top: 7px;
+      right: 7px;
+    }
+    &-title {
+      max-width: 262px;
+      margin-bottom: 22px;
+      margin-top: 32px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &-input__wrapper {
+      gap: 7px;
 
-      &-body {
-        margin: 19px;
-      }
-      &-content {
-        padding: 0;
-      }
-      &-close {
-        top: 7px;
-        right: 7px;
-      }
-      &-title {
-        max-width: 262px;
-        margin-bottom: 22px;
-        margin-top: 32px;
-        font-size: 16px;
-        line-height: 18px;
-      }
-      &-input__wrapper{
-        gap: 7px;
-
-        input {
-          width: 220px;
-        }
-      }
-      &-subtitle {
-        width: 185px;
-        line-height: 16px;
-      }
-      &-item__wrapper {
+      input {
         width: 220px;
       }
-      &-checkbox__wrapper {
-        gap: 7px;
-        margin-bottom: 25px;
-      }
-      &-label {
-        gap: 6px;
-      }
-      &-loading  {
-        margin-bottom: 30px;
-      }
     }
+    &-subtitle {
+      width: 185px;
+      line-height: 16px;
+    }
+    &-item__wrapper {
+      width: 220px;
+    }
+    &-checkbox__wrapper {
+      gap: 7px;
+      margin-bottom: 25px;
+    }
+    &-label {
+      gap: 6px;
+    }
+    &-loading {
+      margin-bottom: 30px;
+    }
+  }
 }
-
 
